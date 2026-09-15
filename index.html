@@ -12,8 +12,8 @@
     
     <title>MOB.COMM | Мобільні комунікації</title>
 
-    <!-- Підключення шрифту Montserrat для журнального/брутального стилю -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Підключення шрифтів Montserrat та Slabo для журналового стилю -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Slabo+27px:wght@400&display=swap" rel="stylesheet">
 
     <style>
         /* Базові змінні та скидання стилів */
@@ -100,12 +100,16 @@
 
         
 h1 {
+    font-family: 'Slabo 27px', serif;
     font-size: clamp(4rem, 12vw, 10rem);
-    font-weight: 900;
+    font-weight: 400;
     text-transform: uppercase;
     line-height: 0.9;
+    letter-spacing: 0.04em;
     z-index: 2;
-    color: var(--text-dark); 
+    color: var(--text-dark);
+    position: relative;
+    top: -18px;
 }
 
 
@@ -116,7 +120,7 @@ h1 {
     width: 100vw; 
     height: 100vh; 
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.5;
     overflow: hidden;
 }
 
